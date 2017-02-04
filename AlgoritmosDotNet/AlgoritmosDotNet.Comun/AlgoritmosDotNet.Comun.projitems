@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{27C37CB6-257D-4D02-980A-22BD5DB9228E}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AlgoritmosDotNet.Comun</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\LinqExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IRandomInt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\RandomIntExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RandomDefault.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RandomRNG.cs" />
+  </ItemGroup>
+</Project>
