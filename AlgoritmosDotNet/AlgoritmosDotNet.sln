@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoritmosDotNet.CifrasYLet
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AlgoritmosDotNet.CifrasYLetras.Shared", "AlgoritmosDotNet.CifrasYLetras.Shared\AlgoritmosDotNet.CifrasYLetras.Shared.shproj", "{3640858B-5B45-4761-B12C-F6CDCC845302}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AlgoritmosDotNet.Comun", "AlgoritmosDotNet.Comun\AlgoritmosDotNet.Comun.shproj", "{27C37CB6-257D-4D02-980A-22BD5DB9228E}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AlgoritmosDotNet.Comun.Shared", "AlgoritmosDotNet.Comun.Shared\AlgoritmosDotNet.Comun.Shared.shproj", "{27C37CB6-257D-4D02-980A-22BD5DB9228E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoritmosDotNet.Framework", "AlgoritmosDotNet.Framework\AlgoritmosDotNet.Framework.csproj", "{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,18 @@ Global
 		{CF423294-F2A0-48BC-9E42-315DB079ED12}.Release|iPhone.Build.0 = Release|Any CPU
 		{CF423294-F2A0-48BC-9E42-315DB079ED12}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{CF423294-F2A0-48BC-9E42-315DB079ED12}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Release|iPhone.Build.0 = Release|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		AlgoritmosDotNet.CifrasYLetras.Shared\AlgoritmosDotNet.CifrasYLetras.Shared\AlgoritmosDotNet.CifrasYLetras.Shared.projitems*{221dfae4-2c54-46df-a46f-3663fa24401a}*SharedItemsImports = 13

@@ -1,7 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\AlgoritmosDotNet.CifrasYLetras.Shared\AlgoritmosDotNet.CifrasYLetras.Shared.projitems" Label="Shared" Condition="Exists('..\AlgoritmosDotNet.CifrasYLetras.Shared\AlgoritmosDotNet.CifrasYLetras.Shared.projitems')" />
-  <Import Project="..\AlgoritmosDotNet.Comun\AlgoritmosDotNet.Comun.projitems" Label="Shared" Condition="Exists('..\AlgoritmosDotNet.Comun\AlgoritmosDotNet.Comun.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -60,4 +58,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\AlgoritmosDotNet.Framework\AlgoritmosDotNet.Framework.csproj">
+      <Project>{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}</Project>
+      <Name>AlgoritmosDotNet.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AlgoritmosDotNet.CifrasYLetras.Shared
+namespace AlgoritmosDotNet.CifrasYLetras
 {
 	public class Enunciado
 	{

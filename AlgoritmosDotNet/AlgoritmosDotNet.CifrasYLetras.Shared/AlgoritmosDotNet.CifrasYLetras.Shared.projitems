@@ -6,11 +6,14 @@
     <SharedGUID>{3640858B-5B45-4761-B12C-F6CDCC845302}</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>AlgoritmosDotNet.CifrasYLetras.Shared</Import_RootNamespace>
+    <Import_RootNamespace>AlgoritmosDotNet.CifrasYLetras</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Enunciado.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Solucion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NumeroExpression.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generador\IGeneradorCifras.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generador\IGeneradorCifrasElegirGrupo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generador\GeneraCifrasTVBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Generador\" />

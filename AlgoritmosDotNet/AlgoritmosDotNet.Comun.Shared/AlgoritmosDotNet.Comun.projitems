@@ -17,5 +17,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\RandomIntExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RandomDefault.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)RandomRNG.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HelperLinq.cs" />
   </ItemGroup>
 </Project>
