@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using static AlgoritmosDotNet.Comun;
+using static AlgoritmosDotNet.Comun.HelperLinq;
 
 namespace AlgoritmosDotNet.Comun.Extensions
 {
@@ -15,8 +15,8 @@ namespace AlgoritmosDotNet.Comun.Extensions
 		/// <typeparam name="T">The 1st type parameter.</typeparam>
 		public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> argElems,IRandomInt argRandom=null)
 		{			
-			T[] pShuffled = original.ToArray();
-			var pRandom = argRandom ?? RandomDefault.GetRandomByVelocityMax (pShuffled.Lenght);
+			var pShuffled = argElems.ToArray();
+			var pRandom = argRandom ?? RandomDefault.GetRandomByVelocityMax (pShuffled.Length);
 
 			for (int pIdx = pShuffled.Length - 1; pIdx > 0; pIdx--)
 			{

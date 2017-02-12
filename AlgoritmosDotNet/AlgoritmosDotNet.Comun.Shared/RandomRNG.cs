@@ -14,7 +14,7 @@ namespace AlgoritmosDotNet.Comun
 
 			mRNG.GetBytes(pData); // thread-safe; no lock necessary
 
-			return (int)(BitConverter.ToUInt32(pData, 0) % max);
+			return (int)(BitConverter.ToUInt32(pData, 0) % argMax);
 		}
 		#endregion
 	}

@@ -23,6 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <Externalconsole>true</Externalconsole>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -62,6 +63,10 @@
     <ProjectReference Include="..\AlgoritmosDotNet.Framework\AlgoritmosDotNet.Framework.csproj">
       <Project>{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}</Project>
       <Name>AlgoritmosDotNet.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AlgoritmosDotNet.Comun.Console\AlgoritmosDotNet.Comun.Console.csproj">
+      <Project>{6647B53D-35EA-4733-8419-D22EC3C261B3}</Project>
+      <Name>AlgoritmosDotNet.Comun.Console</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

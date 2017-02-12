@@ -13,7 +13,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)NumeroExpression.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Generador\IGeneradorCifras.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Generador\IGeneradorCifrasElegirGrupo.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Generador\GeneraCifrasTVBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generador\GeneraCifrasTVE.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Generador\GeneraCifrasCanalSur.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Generador\" />

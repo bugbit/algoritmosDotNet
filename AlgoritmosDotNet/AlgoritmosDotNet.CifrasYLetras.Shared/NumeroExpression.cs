@@ -5,10 +5,10 @@ namespace AlgoritmosDotNet.CifrasYLetras
 {
 	public class NumeroExpression
 	{
-		private Expression<int> mExpresion;
+		private Expression mExpresion;
 		private int? mNumero;
 
-		public Expression<int> Expresion {
+		public Expression Expresion {
 			get {
 				return mExpresion;
 			}

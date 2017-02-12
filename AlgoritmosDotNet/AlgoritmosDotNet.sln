@@ -11,6 +11,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AlgoritmosDotNet.Comun.Shar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoritmosDotNet.Framework", "AlgoritmosDotNet.Framework\AlgoritmosDotNet.Framework.csproj", "{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoritmosDotNet.Comun.Console", "AlgoritmosDotNet.Comun.Console\AlgoritmosDotNet.Comun.Console.csproj", "{6647B53D-35EA-4733-8419-D22EC3C261B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,18 @@ Global
 		Release|iPhoneSimulator = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Release|iPhone.Build.0 = Release|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{6647B53D-35EA-4733-8419-D22EC3C261B3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{CF423294-F2A0-48BC-9E42-315DB079ED12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF423294-F2A0-48BC-9E42-315DB079ED12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF423294-F2A0-48BC-9E42-315DB079ED12}.Debug|iPhone.ActiveCfg = Debug|Any CPU

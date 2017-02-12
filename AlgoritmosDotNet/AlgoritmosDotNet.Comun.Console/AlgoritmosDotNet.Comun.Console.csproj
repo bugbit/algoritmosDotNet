@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E3C3B80B-6AFA-4FEF-B7AF-DE08E8632A18}</ProjectGuid>
+    <ProjectGuid>{6647B53D-35EA-4733-8419-D22EC3C261B3}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>AlgoritmosDotNet.Framework</RootNamespace>
-    <AssemblyName>AlgoritmosDotNet.Framework</AssemblyName>
+    <RootNamespace>AlgoritmosDotNet.Comun.Console</RootNamespace>
+    <AssemblyName>AlgoritmosDotNet.Comun.Console</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,8 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HelperConsole.cs" />
   </ItemGroup>
-  <Import Project="..\AlgoritmosDotNet.CifrasYLetras.Shared\AlgoritmosDotNet.CifrasYLetras.Shared.projitems" Label="Shared" Condition="Exists('..\AlgoritmosDotNet.CifrasYLetras.Shared\AlgoritmosDotNet.CifrasYLetras.Shared.projitems')" />
-  <Import Project="..\AlgoritmosDotNet.Comun.Shared\AlgoritmosDotNet.Comun.projitems" Label="Shared" Condition="Exists('..\AlgoritmosDotNet.Comun.Shared\AlgoritmosDotNet.Comun.projitems')" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
