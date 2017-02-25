@@ -54,7 +54,7 @@ namespace AlgoritmosDotNet.CifrasYLetras.Console
 //			var ec = el.Compile ();
 //			var ee = ec.Invoke ();
 //			var es = e5.ToString ();
-			var g=new GeneraCifrasTVE() as IGeneradorCifras;
+			var g=new GeneraCifrasCanalSur() as IGeneradorCifras;
 
 			pPrg.GenerarEnunciado (g, args.Select(a=>int.Parse(a)).ToArray());
         }
