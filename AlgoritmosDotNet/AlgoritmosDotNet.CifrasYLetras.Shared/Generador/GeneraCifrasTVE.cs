@@ -31,7 +31,7 @@ namespace AlgoritmosDotNet.CifrasYLetras.Generador
 
 		public void SetGrupo (int argGrupo)
 		{
-			var pGrIdx = argGrupo % mGrupos.Length;
+			var pGrIdx = (argGrupo-1) % mGrupos.Length;
 
 			mEnunciado.Numeros[mIdx] = mGrupos [pGrIdx].Pop();
 		}
