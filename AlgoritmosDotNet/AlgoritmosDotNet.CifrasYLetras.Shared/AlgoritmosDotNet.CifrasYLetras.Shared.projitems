@@ -16,8 +16,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)Generador\GeneraCifrasTVE.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Generador\GeneraCifrasCanalSur.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Generador\GeneraCifras1A100.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resolver\EOperacion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resolver\ETipoResolucion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resolver\Solucion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Resolver\SolucionPorOperacionBinaria.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Generador\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Resolver\" />
   </ItemGroup>
 </Project>
