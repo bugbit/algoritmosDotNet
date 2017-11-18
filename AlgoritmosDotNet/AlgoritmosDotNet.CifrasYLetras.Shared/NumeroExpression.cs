@@ -23,39 +23,72 @@ namespace AlgoritmosDotNet.CifrasYLetras
     /// 952=(100+6)*3*75:25-50:25=[(100+6)*3*75-50]:25
     /// 
     /// </summary>
-	public class NumeroExpression
-	{
-		private Expression mExpresion;
-		private int? mNumero;
+	public class NumeroExpression : IEquatable<NumeroExpression>
+    {
+        private Expression mExpresion;
+        private int? mNumero;
 
-		public Expression Expresion {
-			get {
-				return mExpresion;
-			}
-			set {
-				mExpresion = value;
-				mNumero = null;
-			}
-		}
+        public Expression Expresion
+        {
+            get
+            {
+                return mExpresion;
+            }
+            set
+            {
+                mExpresion = value;
+                mNumero = null;
+            }
+        }
 
-		public int Numero
-		{
-			get
-			{
-				if (!mNumero.HasValue)
-					EjecuteExpression ();
+        public int Numero
+        {
+            get
+            {
+                if (!mNumero.HasValue)
+                    EjecuteExpression();
 
-				return mNumero.Value;
-			}
-		}
+                return mNumero.Value;
+            }
+        }
 
-		private void EjecuteExpression()
-		{
-			var pLamda = Expression.Lambda<Func<int>> (mExpresion);
-			var pCompile = pLamda.Compile ();
+        public bool Equals(NumeroExpression other)
+        {
+            return Numero == other.Numero;
+        }
 
-			mNumero = pCompile.Invoke ();
-		}
-	}
+        public override bool Equals(object obj)
+        {
+            var pCls = obj as NumeroExpression;
+
+            if (pCls == null)
+                return false;
+
+            return Equals(pCls);
+        }
+
+        public override int GetHashCode()
+        {
+            return Numero.GetHashCode();
+        }
+
+        public static NumeroExpression Crear(int argNum)
+        {
+            return new NumeroExpression { Expresion = Expression.Constant(argNum) };
+        }
+
+        public NumeroExpression Operacion(NumeroExpression argNum, ExpressionType argOpe)
+        {
+            return new NumeroExpression { Expresion = Expression.MakeBinary(argOpe, Expresion, argNum.Expresion) };
+        }
+
+        private void EjecuteExpression()
+        {
+            var pLamda = Expression.Lambda<Func<int>>(mExpresion);
+            var pCompile = pLamda.Compile();
+
+            mNumero = pCompile.Invoke();
+        }
+    }
 }
 

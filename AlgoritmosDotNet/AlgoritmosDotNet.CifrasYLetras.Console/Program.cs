@@ -56,7 +56,11 @@ namespace AlgoritmosDotNet.CifrasYLetras.Console
 //			var es = e5.ToString ();
 			var g=new GeneraCifrasCanalSur() as IGeneradorCifras;
 
-			pPrg.GenerarEnunciado (g, args.Select(a=>int.Parse(a)).ToArray());
+            //pPrg.GenerarEnunciado (g, args.Select(a=>int.Parse(a)).ToArray());
+
+            var r = new Resolver.Resuelve();
+
+            r.Resolver(g.Generar());
         }
     }
 }
