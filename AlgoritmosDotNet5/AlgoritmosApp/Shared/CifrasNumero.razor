@@ -1,0 +1,23 @@
+﻿<input type="text" required list="productName" style="width:60px" @bind="NumeroStr" />
+<datalist id="productName">
+    @foreach (var n in AlgoritmosCore.Cifras.Generador.NumerosTVE)
+    {
+        <option value="@n">@n</option>
+    }
+</datalist>
+
+@code {
+    [Parameter]
+    public int? Numero
+    {
+        get => AlgoritmosCore.Helpers.HelperNumber.ParseIntNullable(NumeroStr);
+        set
+        {
+            NumeroStr = value.ToString();
+        }
+    }
+
+    public void SetNumero(int argNumero) => Numero = argNumero;
+
+    private string NumeroStr { get; set; }
+}

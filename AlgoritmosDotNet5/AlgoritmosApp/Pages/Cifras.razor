@@ -1,0 +1,69 @@
+﻿@page "/cifras"
+@using AlgoritmosCore.Cifras;
+@inject IJSRuntime JS;
+
+<h3>Cifras (programa "Cifras y letras" de la tele)</h3>
+
+<p>Encuentra la solución exacta o aproximación</p>
+
+Número a buscar:
+<input id="num" required maxlength="3" style="width:45px" @bind="ObjetivoStr" />
+<br />Cifras:
+<CifrasNumero Numero=@prueba[0]></CifrasNumero>
+<CifrasNumero Numero=@prueba[1]></CifrasNumero>
+<CifrasNumero Numero=@prueba[2]></CifrasNumero>
+<CifrasNumero Numero=@prueba[3]></CifrasNumero>
+<CifrasNumero Numero=@prueba[4]></CifrasNumero>
+<CifrasNumero Numero=@prueba[5]></CifrasNumero>
+<br />
+<br />
+<button @onclick="Resolver_Click">Resolver</button>
+<button @onclick="GenerarTv2_Click">Generar Tv2</button>
+<button>Generar Canal Sur</button>
+<button>Generar 1-100</button>
+
+@code {
+    private string ObjetivoStr { get; set; }
+    private Generador Generador;
+    private int?[] prueba;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        Generador = new Generador();
+        prueba = new int?[6];
+    }
+
+    private async Task Resolver_Click()
+    {
+        try
+        {
+            var pEnun = Generador.Generar(prueba, AlgoritmosCore.Helpers.HelperNumber.ParseIntNullable(ObjetivoStr));
+        }
+        catch (Exception ex)
+        {
+            await JS.InvokeVoidAsync("alert", ex.Message);
+        }
+    }
+
+    private async Task GenerarTv2_Click()
+    {
+        try
+        {
+            var pEnun = Generador.GenerarTv2();
+
+            SetEnunciado(pEnun);
+        }
+        catch (Exception ex)
+        {
+            await JS.InvokeVoidAsync("alert", ex.Message);
+        }
+    }
+
+    private void SetEnunciado(AlgoritmosCore.Cifras.Enunciado argEnum)
+    {
+        for (var i = 0; i < argEnum.Numeros.Length; i++)
+            prueba[i] = argEnum.Numeros[i];
+        ObjetivoStr = Convert.ToString(argEnum.Objetivo);
+    }
+}
